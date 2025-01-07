@@ -106,7 +106,7 @@ body{
 
 .slides {
     display: flex;
-    width: 900%; /* Ajusta este valor según la cantidad de imágenes */
+    width: 1700%; /* Ajusta este valor según la cantidad de imágenes */
     height: 100%;
 }
 
@@ -329,3 +329,23 @@ ul{
 
     }
 }
+
+
+/* Pantalla de transición */
+.transition-screen {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    transition: bottom 1.2s ease-in-out;
+  }
+
+
+  /* Movimiento del contenido hacia arriba */
+body.moving-up {
+    transform: translateY(-100%);
+    transition: transform 5s ease-in-out;
+  }
