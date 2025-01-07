@@ -17,5 +17,7 @@ function slideImages() {
 }
 
 
+setTimeout(() => {
+    setInterval(slideImages, 3000);
+}, 4000);
 
-setInterval(slideImages, 3000);

@@ -309,12 +309,6 @@ ul{
     }
 }
 
-@media (min-width : 650px){
-    .menu-overlay ul li a{
-        font-size: 16px;
-
-    }
-}
 
 @media (min-width : 800px){
     .menu-overlay ul li a{
@@ -349,3 +343,36 @@ body.moving-up {
     transform: translateY(-100%);
     transition: transform 5s ease-in-out;
   }
+
+
+.intro{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 999;
+    transition: transform 1s ease-in-out;
+}
+
+video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 65vw;
+    z-index: 1000;
+}
+
+@media (min-width : 650px){
+    .menu-overlay ul li a{
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width: 900px) {
+
+    video{
+        width: 200vw;
+    }
+} 
