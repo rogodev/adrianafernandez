@@ -12,8 +12,10 @@ function slideImages() {
     } else {
         
         slides.style.transition = 'transform 1s ease-in-out';
-        slides.style.transform = `translateX(-${20*currentIndex}%)`;
+        slides.style.transform = `translateX(-${(100/9)*currentIndex}%)`;
     }
 }
+
+
 
 setInterval(slideImages, 3000);

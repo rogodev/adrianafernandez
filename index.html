@@ -7,7 +7,6 @@
     <title>Adriana Fernández</title>
 </head>
 <body>
-    
 
     <header class="header">
         <h4>Adriana Fernández</h4>
@@ -16,12 +15,15 @@
                 <li><a href="">Bulls</a></li>    
                 <li><a href="">Belén</a></li>    
                 <li><a href="">Fiestas</a></li>    
-                <li><a href="">Fiestas</a></li>   
-                <li><a href="">More</a></li>   
+                <li><a href="">About</a></li>   
+                <li><a href="">Contact</a></li>   
+                <li><a href="">More</a></li>    
             </ul>
         </nav>
         <div class="header-trigger">
-            <img src="Assets/Images/header_active.png" alt="">
+            <button class="menu-open-button">
+                <img src="Assets/Images/abajo.png" alt="">
+            </button>
         </div>
         <nav class="header-nav-social-media">
             <ul class="header-nav-social-media-list">
@@ -29,6 +31,31 @@
                 <li class="header-nav-social-media-list-item"><a href=""><img src="Assets/Images/tiktok.png" alt=""></a></li>
             </ul>
         </nav>
+
+
+        <!-- Menú desplegable -->
+        <div class="menu-overlay">
+            <header class="menu-overlay-header">
+                <h4>Adriana Fernández</h4>
+                <button class="close-btn"><img src="Assets/Images/arriba.png" alt=""></button>
+                <nav class="menu-overlay-header-nav-social-media">
+                    <ul class="menu-overlay-header-nav-social-media-list">
+                        <li class="menu-overlay-header-nav-social-media-list-item"><a href=""><img src="Assets/Images/instagram-black.png" alt=""></a></li>
+                        <li class="menu-overlay-header-nav-social-media-list-item"><a href=""><img src="Assets/Images/tik-tok-black.png" alt=""></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <nav>
+                <ul class="menu-overlay-list">
+                    <li><a href="">Bulls</a></li>    
+                    <li><a href="">Belén</a></li>    
+                    <li><a href="">Fiestas</a></li>    
+                    <li><a href="">About</a></li>   
+                    <li><a href="">Contact</a></li>   
+                    <li><a href="">More</a></li>   
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
@@ -38,11 +65,16 @@
             <div class="slide" style="background-image: url(Assets/Images/FotoAdriana2.jpeg);"></div>
             <div class="slide" style="background-image: url('Assets/Images/FotoAdriana3.jpeg');"></div>
             <div class="slide" style="background-image: url('Assets/Images/FotoAdriana4.jpeg');"></div>
+            <div class="slide" style="background-image: url('Assets/Images/FotoAdriana5.jpeg');"></div>
+            <div class="slide" style="background-image: url('Assets/Images/FotoAdriana6.jpeg');"></div>
+            <div class="slide" style="background-image: url('Assets/Images/FotoAdriana7.jpeg');"></div>
+            <div class="slide" style="background-image: url('Assets/Images/FotoAdriana8.jpeg');"></div>
             <div class="slide" style="background-image: url('Assets/Images/FotoAdriana1.jpeg');"></div>
         </div>
     </div>
 
     <script src="Assets/Js/background_animation.js"></script>
     <script src="Assets/Js/header_animation.js"></script>
+    <script src="Assets/Js/menu_desplegable.js"></script>
 </body>
 </html>
