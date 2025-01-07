@@ -39,7 +39,7 @@ function ejecutarScript() {
 
     // Función para agregar o quitar eventos según la resolución
     function gestionarEventos() {
-        if (window.innerWidth > 900) {
+        if (window.innerWidth > 1400) {
             // Agregar eventos si la pantalla es grande
             header_trigger.addEventListener('mouseenter', mostrarMenu);
             header_nav.addEventListener('mouseleave', ocultarMenu);

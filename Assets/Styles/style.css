@@ -183,7 +183,13 @@ ul{
 
 .menu-overlay ul li a{
     color: black;
+    font-size: 1rem;
     font-weight: bold;
+}
+
+.menu-overlay ul li:hover{
+    transform: scale(1.1);
+
 }
 
 .menu-overlay h4{
@@ -274,6 +280,52 @@ ul{
         opacity: 0.8;
         transform: scale(1.2);
     }
+    .menu-overlay ul li a{
+        font-size: 12px;
 
+    }
     
+}
+
+
+@media (min-width : 300px){
+    .menu-overlay ul li a{
+        font-size: 10px;
+
+    }
+}
+
+@media (min-width : 400px){
+    .menu-overlay ul li a{
+        font-size: 12px;
+
+    }
+}
+
+@media (min-width : 500px){
+    .menu-overlay ul li a{
+        font-size: 14px;
+
+    }
+}
+
+@media (min-width : 650px){
+    .menu-overlay ul li a{
+        font-size: 16px;
+
+    }
+}
+
+@media (min-width : 800px){
+    .menu-overlay ul li a{
+        font-size: 18px;
+
+    }
+}
+
+@media (min-width : 1000px){
+    .menu-overlay ul li a{
+        font-size: 22px;
+
+    }
 }
