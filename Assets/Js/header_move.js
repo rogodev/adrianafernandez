@@ -1,0 +1,13 @@
+// Selecciona el header
+const header = document.querySelector('.header');
+
+// Agrega un evento de scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    header.style.backgroundColor = '#ffffff';
+    header.style.color = '#000000';
+  } else {
+    header.style.backgroundColor = 'transparent';
+    header.style.color = '#ffffff';
+  }
+});

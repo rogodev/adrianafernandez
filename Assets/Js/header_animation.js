@@ -12,7 +12,7 @@ function ejecutarScript() {
         if (animation2Complete) {
             header_trigger.style.animation = 'slideUp 0.3s ease-out forwards';
             header_nav.style.animation = 'slideDown 0.3s ease-out forwards';
-            header_nav.style.backdropFilter = 'blur(2px)';
+
             header_nav.style.display = 'flex';
             animation2Complete = false;
 
