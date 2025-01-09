@@ -12,6 +12,9 @@
     letter-spacing: 3px;
     font-size: 12px;
 }
+html{
+    width: 100vw;
+}
 
 body{
     width: 100vw;
@@ -20,6 +23,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 
 .header{
     position: fixed;
@@ -317,10 +321,15 @@ ul{
     }
 }
 
-
+  /* Movimiento del contenido hacia arriba */
+  body.moving-up {
+    transform: translateY(-100%);
+    transition: transform 5s ease-in-out;
+  }
 /* Pantalla de transición */
 .transition-screen {
     position: fixed;
+    background-color: white;
     bottom: -100%;
     left: 0;
     width: 100%;
@@ -329,53 +338,63 @@ ul{
     transition: bottom 1.2s ease-in-out;
   }
 
+
+.transition-screen-out {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    z-index: 1000;
+    background-color: white;
+    transition: top 2s ease-in-out;
+}
+
 .header-nav-social-media-list-item img {
     width: 20px;
 }
 
-.fotos-container{
-    position: relative;
-    top: 15vh;
-    width: 90vw;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1rem;
-    gap: 2rem;
-    margin-bottom: 10vh;
-}
-
-
-.fotos-contianer-column{
-    position: relative;
-    top:0;
-    left: 0;
-    width: 45vw;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16rem;
-}
-
-.img-container{
-    max-width: 40vw;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-
-}
-
-.img-container img{
+.container-img{
     width: 100%;
-    height: 80%;
-    object-fit: contain;
+    max-width: 1100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px;
+    grid-gap: 20px;
 }
 
-.rigth-column{
-    position: relative;
-    top:5%;
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-img .box-img:nth-child(1){
+    grid-column-start: span 2;
+}
+
+.container-img .box-img:nth-child(4){
+    grid-row-start: span 2;
+}
+
+
+
+@media screen and (max-width : 500px){
+    .container-img{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+
+    .container-img .box-img img{
+        max-width: 100%;
+        grid-row-start: span 2;
+    }
 }
