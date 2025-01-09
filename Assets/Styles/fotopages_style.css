@@ -366,7 +366,7 @@ ul{
     grid-gap: 20px;
 }
 
-.container-img .box-img figure{
+.container-img .box-img figure,.container-img .box-img video{
     width: 100%;
     height: 100%;
 }
