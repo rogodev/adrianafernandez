@@ -7,9 +7,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
       const transitionScreen = document.querySelector('.transition-screen');
       transitionScreen.style.bottom = '0';
   
-      // Mueve todo el contenido hacia arriba
-      document.body.classList.add('moving-up');
-  
       // Redirige después de la transición
       setTimeout(() => {
         window.location.href = targetUrl;
