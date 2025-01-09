@@ -32,8 +32,8 @@ body{
     align-items: center;
     width: 100%;
     height: 10vh;
-    padding: 10px 100px;
     z-index: 100;
+    padding: 10px 100px;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -127,7 +127,7 @@ ul{
     position: fixed;
     top: -100%;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -136,6 +136,7 @@ ul{
     justify-content: center;
     align-items: center;
     transition: top 0.5s ease;
+    padding: 10px 100px;
     z-index: 1000;
 }
 
@@ -170,7 +171,7 @@ ul{
     align-items: center;
     width: 100vw;
     height: 10vh;
-    padding: 10px 40px;
+    padding: 10px 100px;
     z-index: 100;
 
 }
@@ -236,7 +237,7 @@ ul{
 
 @media (max-width : 900px){
     .header{
-        padding: 10px 40px;
+        padding: 10px 30px;
     }
     .header h4{
         font-size: 10px;
@@ -387,6 +388,11 @@ ul{
 
 
 @media screen and (max-width : 500px){
+
+    .menu-overlay-header{
+        padding: 10px 20px;
+    }
+    
     .container-img{
         width: 90%;
         grid-template-columns: repeat(2,1fr);
@@ -394,7 +400,10 @@ ul{
     }
 
     .container-img .box-img img{
-        max-width: 100%;
         grid-row-start: span 2;
+    }
+
+    .container-img .box-img:nth-child(7){
+        grid-column-start: span 2;
     }
 }
