@@ -36,7 +36,7 @@ body{
 
 .header h4{
     color: white;
-    width: 16%;
+    width: 24%;
     z-index: 100;
 }
 
@@ -47,7 +47,7 @@ body{
     display: none;
     align-items: center;
     justify-content: center;
-    height: 15dvh;
+    height: 10dvh;
 }
 
 .header-nav a{

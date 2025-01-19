@@ -13,7 +13,8 @@
     font-size: 12px;
 }
 html{
-    width: 100vw;
+    width: 80dvw;
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
 body{
@@ -22,6 +23,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
 
@@ -39,11 +41,8 @@ body{
 
 .header h4{ 
     color: black;
-    width: 12%;
+    width: 24%;
     z-index: 100;
-}
-.header h4 a{
-    font-size: 9px;
 }
 
 .header-nav{
@@ -53,14 +52,13 @@ body{
     display: none;
     align-items: center;
     justify-content: center;
-    height: 15dvh;
+    height: 10dvh;
 }
 
 .header-nav a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 900px;
-    font-size: 9px;
 }
 
 .header-nav li:hover{
@@ -256,7 +254,9 @@ ul{
         font-size: 12px;
 
     }
-    
+    .header h4 a{
+        font-size: 9px;
+    }
 }
 
 
