@@ -349,7 +349,7 @@ ul{
 
     .mobile {
         display: block; /* Muestra el slider móvil */
-        height: 90vh; /* Opcional: Ajusta el alto en pantallas pequeñas */
+        height: 100vh; /* Opcional: Ajusta el alto en pantallas pequeñas */
     }
 
     .mobile .slides2 {
