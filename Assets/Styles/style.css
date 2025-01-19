@@ -10,12 +10,10 @@
     font-optical-sizing: auto;
     text-transform: uppercase;
     letter-spacing: 3px;
-    overflow: hidden;
     font-size: 12px;
 }
 .html{
     width: 100vw;
-    overflow: hidden;
     height: 100vh;
 }
 
@@ -121,25 +119,49 @@ body{
 
 }
 
-.slider{
+/* Estilo base para sliders */
+.slider {
     position: relative;
-    width: 100%;
-    height: 100vh;  
+    width: 100vw;
+    height: 100vh; /* Pantalla completa */
+    overflow: hidden;
 }
 
-.slides {
+.slides, .slides2 {
     display: flex;
-    width: 800%; /* Ajusta este valor según la cantidad de imágenes */
-    height: 100%;
+    transition: transform 1s ease-in-out; /* Animación de deslizamiento */
 }
 
-.slide,.slide2 {
-    width: 100%;
+/* Slider de escritorio */
+.pc .slides {
+    width: 800%; /* 8 diapositivas */
+    height: 100%; /* Igual al contenedor */
+}
+
+.pc .slide {
+    width: 100%; /* Cada diapositiva ocupa el ancho completo del contenedor */
+    height: 100%; /* Igual al contenedor */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Slider móvil */
+.mobile {
+    display: none; /* Oculto por defecto */
+}
+
+.mobile .slides2 {
+    width: 1500%; /* Ajustado para 15 diapositivas */
+    height: 100%; /* Igual al contenedor */
+}
+
+.mobile .slide2 {
+    width: calc(100% / 15); /* Divide el ancho entre 15 diapositivas */
     height: 100%;
     background-size: cover;
     background-position: center;
-    transition: transform 1s ease-in-out;
 }
+
 
 
 
@@ -321,20 +343,17 @@ ul{
 
     }
 
-    .pc{
-        display: none;
+    .pc {
+        display: none; /* Oculta el slider de escritorio */
     }
 
-    .slider + .mobile{
-        display: flex;
-        width: 1400%;
-        height: 100%;
+    .mobile {
+        display: block; /* Muestra el slider móvil */
+        height: 90vh; /* Opcional: Ajusta el alto en pantallas pequeñas */
     }
 
-    .slides2{
-        display: flex;
-        width: 1400%;
-        height: 100%;
+    .mobile .slides2 {
+        width: 1500%; /* Asegura que se mantenga el ancho correcto */
     }
 
     
