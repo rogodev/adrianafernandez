@@ -18,7 +18,7 @@ html{
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 10vh;
+    height: 10dvh;
     z-index: 100;
     padding: 10px 100px;
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -53,7 +53,7 @@ body{
     display: none;
     align-items: center;
     justify-content: center;
-    height: 15vh;
+    height: 15dvh;
 }
 
 .header-nav a{
@@ -81,7 +81,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15vh;
+    height: 15dvh;
 }
 
 .header-trigger img{
@@ -175,7 +175,7 @@ ul{
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 10vh;
+    height: 10dvh;
     padding: 10px 100px;
     z-index: 100;
 

@@ -14,12 +14,12 @@
 }
 .html{
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
 }
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .header{
@@ -47,7 +47,7 @@ body{
     display: none;
     align-items: center;
     justify-content: center;
-    height: 15vh;
+    height: 15dvh;
 }
 
 .header-nav a{
@@ -84,7 +84,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15vh;
+    height: 15dvh;
     overflow: visible;
 }
 
@@ -123,7 +123,7 @@ body{
 .slider {
     position: relative;
     width: 100vw;
-    height: 100vh; /* Pantalla completa */
+    height: 100dvh; /* Pantalla completa */
     overflow: hidden;
 }
 
@@ -254,7 +254,7 @@ ul{
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 10vh;
+    height: 10dvh;
     padding: 10px 40px;
     z-index: 100;
 
@@ -349,7 +349,7 @@ ul{
 
     .mobile {
         display: block; /* Muestra el slider móvil */
-        height: 100vh; /* Opcional: Ajusta el alto en pantallas pequeñas */
+        height: 100dvh; /* Opcional: Ajusta el alto en pantallas pequeñas */
     }
 
     .mobile .slides2 {
@@ -420,7 +420,7 @@ body.moving-up {
 .intro{
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background-color: white;
     z-index: 999;
     transition: transform 1s ease-in-out;
