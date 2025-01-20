@@ -1,6 +1,21 @@
 
+.container-img .box-img:nth-child(10){
 
-@media screen and (max-width : 500px){
+    grid-row-start: span 2;
+}
+
+.container-img .box-img:nth-child(11){
+
+    grid-column-start: span 2;
+    height: 600px;
+}
+
+.container-img .box-img:nth-child(15){
+
+    grid-column-start: span 2;
+}
+
+@media screen and (max-width : 900px){
 
     .menu-overlay-header{
         padding: 10px 30px;
@@ -18,7 +33,13 @@
     
     .container-img .box-img:nth-child(10){
 
-        grid-row-start: span 2;
+        grid-column-start: span 2;
+    }
+
+    .container-img .box-img:nth-child(11){
+
+        height: 200px;
+        grid-column-start: span 1;
     }
 
     .container-img .box-img:nth-child(13){
@@ -29,5 +50,10 @@
     .container-img .box-img:nth-child(15){
 
         grid-row-start: span 2;
+    }
+
+    .container-img .box-img:nth-child(15){
+
+        grid-column-start: span 1;
     }
 }
