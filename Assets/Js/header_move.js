@@ -2,8 +2,7 @@
 const header = document.querySelector('.header');
 
 // Agrega un evento de scroll
-window.addEventListener('scroll', () => {
-  console.log("Hola");
+window.addEventListener('scroll', () => { 
   if (window.scrollY > 50) {
     header.style.backgroundColor = '#ffffff';
     header.style.color = '#000000';
