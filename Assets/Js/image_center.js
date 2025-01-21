@@ -4,10 +4,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const images = document.querySelectorAll(".container-img img");
     let currentIndex = -1;
 
+    // Función para verificar si estamos en móvil
+    function isMobile() {
+        return window.innerWidth <= 900; // Ajusta el valor según el tamaño de pantalla que consideres móvil
+    }
+
     // Función para abrir el modal con la imagen seleccionada
     function openModal(index) {
         currentIndex = index;
-        modalImage.src = images[currentIndex].src;
+        const imgElement = images[currentIndex];
+        
+        // Si estamos en móvil, tomamos la imagen del <source> dentro del <picture>
+        if (isMobile()) {
+            const pictureElement = imgElement.closest('figure').querySelector('picture');
+            const sourceElement = pictureElement.querySelector('source');
+            if (sourceElement) {
+                modalImage.src = sourceElement.srcset; // Usamos el srcset del <source> para móviles
+            }
+        } else {
+            modalImage.src = imgElement.src; // Usamos la imagen original del <img> si no es móvil
+        }
+
         modal.style.display = "flex";
         document.body.style.overflow = "hidden"; // Evita el scroll
     }
@@ -21,7 +38,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // Función para cambiar de imagen
     function changeImage(direction) {
         currentIndex = (currentIndex + direction + images.length) % images.length;
-        modalImage.src = images[currentIndex].src;
+        const imgElement = images[currentIndex];
+
+        // Si estamos en móvil, tomamos la imagen del <source> dentro del <picture>
+        if (isMobile()) {
+            const pictureElement = imgElement.closest('figure').querySelector('picture');
+            const sourceElement = pictureElement.querySelector('source');
+            if (sourceElement) {
+                modalImage.src = sourceElement.srcset; // Usamos el srcset del <source> para móviles
+            }
+        } else {
+            modalImage.src = imgElement.src; // Usamos la imagen original del <img> si no es móvil
+        }
     }
 
     // Función para ir a la imagen anterior
