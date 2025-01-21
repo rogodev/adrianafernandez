@@ -1,4 +1,6 @@
 
+
+
 .container-img .box-img:nth-child(10){
 
     grid-row-start: span 2;
@@ -14,6 +16,9 @@
 
     grid-column-start: span 2;
 }
+
+
+
 
 @media screen and (max-width : 900px){
 

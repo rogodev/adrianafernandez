@@ -390,9 +390,93 @@ ul{
     grid-row-start: span 2;
 }
 
+/* Clase para deshabilitar el scroll */
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Contenedor del modal */
+.image-modal {
+    display: none; /* Ocultar el modal inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.913); /* Fondo oscuro */
+    z-index: 1000;
+}
+
+/* Imagen dentro del modal */
+#modal-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 80%; /* Imagen no supera el 80% del ancho */
+    max-height: 80%; /* Imagen no supera el 80% del alto */
+
+    object-fit: contain; /* Ajuste sin distorsión */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón para cerrar el modal */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close-modal:hover {
+    color: #bbb;
+}
+
+/* Flechas */
+span.arrow-left, span.arrow-right {
+    background: transparent;
+    width: 10%;
+    height: 30%;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+span.arrow-left {
+    left: 5%;
+}
+
+span.arrow-right {
+    right: 5%;
+}
+
+@media screen and (max-width : 1400px){
+
+    span.arrow-left {
+        left:  0;
+    }
+    
+    span.arrow-right {
+        right: 0;
+    }
+
+}
 
 
-@media screen and (max-width : 500px){
+
+@media screen and (max-width : 900px){
 
     .menu-overlay-header{
         padding: 10px 30px;
@@ -410,5 +494,13 @@ ul{
 
     .container-img .box-img:nth-child(7){
         grid-column-start: span 2;
+    }
+
+    span.arrow-left {
+        left:  0;
+    }
+    
+    span.arrow-right {
+        right: 0;
     }
 }
