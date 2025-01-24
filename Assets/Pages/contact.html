@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../Styles/fotopages_style.css">
-    <link rel="stylesheet" href="../Styles/about_me_style.css">
+    <link rel="stylesheet" href="../Styles/contact_style.css">
 </head>
 <body>
-
-
     <header class="header">
         <h4><a style="color: black;" class="nav-link" href="../../index.html">Adriana Fernández Morentin</a></h4>
         <nav class="header-nav" style="background-color: rgb(255, 255, 255);">
@@ -64,60 +65,69 @@
         </div>
     </header>
 
+    <section class="Contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <p>Si tienes algun sugerencia o lo que sea contactame mediante el siguiente formulario</p>
 
+        </div>
 
-    <section class="about-me-container pc">
-        <article class="adriana-info">
-            <h2>Hola, Soy Adriana Fernández Morentin</h2>
-            <p> Aunque empecé tomando fotos como un simple pasatiempo, poco a poco se convirtió en una forma de expresión que me llena de <b>alegría</b> y <b>creatividad</b>.<br>
+        <div class="container">
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="icon">
+                            <b></b> <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="text">
+                            <h3>ADDRESS</h3>
+                            <p>
+                                San Adrian, Navarra<br>
+                                31570<br>
 
-                Me encanta detenerme en los <b>pequeños detalles</b>, descubrir la belleza en lo cotidiano y dar vida a momentos que quizás pasan desapercibidos para otros. Desde paisajes impresionantes hasta los gestos más sutiles, mi cámara es mi compañera inseparable.<br>
-                
-                Aunque lo hago por <b>pasión</b>, me esfuerzo por dar a cada toma un toque <b>único</b> y <b>profesional</b>. 
-                <br>
-                Espero que disfrutes explorando esta galería tanto como yo disfruto creando cada fotografía. <br>
-                
-                Gracias por estar aquí y dejarme compartir mi visión contigo.</p>
-
-            <div class="logo-container">
-                <img src="../Images/Icons/Logo.png" alt="adriana-fernandez-logo">
-            </div>
-        </article>
-
-
-        <article class="adriana-foto">
-                <img src="../Images/Icons/adriana_vintage.jpg" alt="">
-        </article>
-
-
-
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <b></b><i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>
+                                adri.03.fm@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class="txt">Connect with me</h2>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required ="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" id="email" name="" required ="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Message...</span>
+                        </div>
+                        <div class="inputBox" style="width: 100%; display: flex; justify-content: center;">
+                            <button type="submit" id="sendButton">Send</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
     </section>
 
-
-    <section class="about-me-container mobile">
-        <article class="adriana-info">
-            <h2>Hola, Soy Adriana Fernández Morentin</h2>
-            <p> Aunque empecé tomando fotos como un simple pasatiempo, poco a poco se convirtió en una forma de expresión que me llena de <b>alegría</b> y <b>creatividad</b>.<br>
-
-                Me encanta detenerme en los <b>pequeños detalles</b>, descubrir la belleza en lo cotidiano y <b>dar vida</b> a momentos que quizás pasan desapercibidos para otros. Desde paisajes impresionantes hasta los gestos más sutiles, mi cámara es mi compañera <b>inseparable</b>.<br>
-            </p>
-
-            <img src="../Images/Icons/adriana_vintage.jpg" alt="">
-            <p>
-                Aunque lo hago por <b>pasión</b>, me esfuerzo por dar a cada toma un toque <b>único</b> y <b>profesional</b>. 
-                <br>
-                Espero que disfrutes explorando esta galería tanto como yo disfruto creando cada fotografía. <br>
-                
-                Gracias por estar aquí y dejarme compartir mi visión contigo.
-            </p>
-            <div class="logo-container">
-                <img src="../Images/Icons/Logo.png" alt="adriana-fernandez-logo">
-            </div>
-        </article>
-
-
-
-    </section>
 
     <div class="transition-screen"></div>
     <div class="transition-screen-out"></div>
@@ -126,5 +136,7 @@
     <script src="../Js/header_move.js"></script>
     <script src="../Js/screen_transition.js"></script>
     <script src ="../Js/scree_transition_out.js"></script>
+  <!-- Incluye el script aquí -->
+  <script src="../Js/send_animation.js"></script>
 </body>
 </html>

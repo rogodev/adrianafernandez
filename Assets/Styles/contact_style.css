@@ -1,0 +1,398 @@
+.Contact{
+    position: absolute;
+    top: 10vh;
+    width: 60vw;
+    min-height: 80vh;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.Contact .content{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.Contact .content h2{
+    color: #01dbc2;
+    font-size: 3em;
+
+}
+
+.Contact .content p{
+    font-size:1.3em;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    
+}
+
+.container {
+    position: relative;
+    top: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 50px;
+    margin-top: 60px;
+}
+
+.container .contact-info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contact-info .box{
+    position: relative;
+    top: 10vh;
+    display: flex;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.container .contact-info .box .icon{
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background: repeating-conic-gradient(from 17.5deg,#01dbc2 0%, #01dbc2 10%,
+     transparent 10%, transparent 50%);
+}
+
+.container .contact-info .box .icon::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 117.5deg,#01dbc2 0%, #01dbc2 10%,
+    transparent 10%, transparent 50%);
+}
+
+.container .contact-info .box .icon::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: #fff;
+}
+
+.container .contact-info .box .icon b{
+    position: absolute;
+    inset: 8px;
+    background:#01dbc2 ;
+    z-index: 2;
+}
+
+.container .contact-info .box .icon i{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    font-size: 1.5em;
+}
+
+.container .contact-info .box .text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+}
+
+.container .contact-info .box .text h3{
+    font-weight: 700px;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    color: #01dbc2;
+    letter-spacing: 0.5px;
+}
+
+.container .contact-info .box .text p{
+    letter-spacing: 0.5px;
+}
+
+
+.container .contact-info .txt{
+    position: relative;
+    top: 10vh   ;
+    margin-top: 30px;
+    font-size: 1.8em;
+    color: #01dbc2;
+    letter-spacing: 0.5px ;
+    font-weight: 800px;
+    border-left: 10px solid #01dbc2;
+    padding-left: 10px;
+    line-height: 1em;
+}
+
+.container .contact-info .sci{
+    position: relative;
+    width: 45%;
+    top: 10vh   ;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0; 
+    justify-content: center;
+}
+
+.container .contact-info .sci li{
+    list-style: none;
+
+}
+
+.container .contact-info .sci li a i{
+    color: black;
+    font-size: 2.5em;
+    transition: 0.25s;
+}
+
+.container .contact-info .sci li a i:hover{
+    color: #01dbc2;
+    filter: drop-shadow(0 0 1px #01dbc2);
+}
+
+.container .contact-form{
+    position: relative;
+    top: 10vh;
+    width: 70vw;
+    background: repeating-conic-gradient(from var(--a),#01dbc2 0%, #01dbc2 10%,
+    transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    padding: 60px;
+
+}
+
+.container .contact-form::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a),#01dbc2 0%, #01dbc2 10%,
+    transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    animation-delay: -3.5s;
+}
+
+.container .contact-form::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border: 20px solid #ffffff ;
+    background-color: white;
+}
+
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+
+}
+
+@keyframes animate{
+    0%{
+        --a : 0deg;
+    }
+    100%{
+        --a : 360deg;
+    }
+}
+
+.container .contact-form form{
+    position: relative;
+    z-index: 10;
+}
+
+.container .contact-form form h2{
+    font-size: 1.8em;
+    font-weight: 700px;
+    color: #01dbc2;
+}
+.container .contact-form form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container .contact-form form .inputBox input,
+.container .contact-form form .inputBox textarea{
+    width: 100% !important;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #01dbc2;
+    outline:  none;
+    resize: none;
+    text-transform: none;
+    letter-spacing:1px;
+}
+
+.container .contact-form form .inputBox textarea::-webkit-scrollbar {
+    width: 2px; /* Ancho de la barra */
+}
+
+.container .contact-form form .inputBox textarea::-webkit-scrollbar-thumb {
+    background: #01dbc2; /* Color del "pulgar" de la barra */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+
+.container .contact-form form .inputBox span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+
+
+.container .contact-form form .inputBox input:focus ~ span,
+.container .contact-form form .inputBox textarea:focus ~ span,
+.container .contact-form form .inputBox input:valid ~ span,
+.container .contact-form form .inputBox textarea:valid ~ span{
+    color: #01dbc2;
+    font-size: 0.9em;
+    transform: translateY(-24px);
+}
+
+
+.container .contact-form form .inputBox input[type = "submit"]{
+    width: 100%;
+    background-color: #01dbc2;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900px;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 991px) {
+
+    .Contact{
+        width: 100dvw;
+    }
+
+    .Contact .content{
+        width: 80vw;
+    }
+
+    .container .contact-info {
+        width: 60vw;
+        
+    }
+    .container .contact-info .sci {
+        width: 60vw;
+    }
+
+    .container .contact-form{
+        width: 80dvw;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        top: 35vh;
+        left: 0;
+    }
+
+    .container .contact-info .txt {
+        
+        font-size: 1.7em;
+    }
+
+    .container .contact-form {
+        padding: 35px;
+    }
+
+    .container .contact-info .box{
+        top: 2vh;
+    }
+
+    .container .contact-info .txt {
+        top: 5vh;
+    }
+
+    .container .contact-info .sci {
+        top: 5vh;
+    }
+
+    .container .contact-info .sci li a i{
+        color: #01dbc2;
+        font-size: 2em;
+    }
+
+    .container .contact-form{
+        top: 5vh;
+    }
+} 
+
+/* Estilo inicial del botón */
+#sendButton {
+    width: 100%;
+    background-color: #01dbc2;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Esquinas redondeadas al inicio */
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Estado cuando el botón se transforma en círculo */
+  #sendButton.sending {
+    width: 50px;  /* Tamaño del círculo */
+    height: 50px; /* Tamaño del círculo */
+    border-radius: 50%; /* Forma circular */
+    padding: 0;
+    font-size: 0;  /* El texto desaparece */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estado final: el botón con el ícono de check */
+  #sendButton.success {
+    width: 50px;  /* Tamaño del círculo */
+    height: 50px; /* Tamaño del círculo */
+    border-radius: 50%; /* Círculo */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ícono de check */
+  #sendButton.success i {
+    font-size: 24px;
+    color: white;
+  }
+  
+  /* Botón deshabilitado */
+  #sendButton:disabled {
+    background-color: #b3b3b3; /* Color apagado */
+    cursor: not-allowed; /* Cursor inactivo */
+  }
+  
+
+
