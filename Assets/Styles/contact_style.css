@@ -340,6 +340,12 @@
     }
 } 
 
+@media (max-width: 380px) {
+    .container .contact-info .box{
+        top: 8vh;
+    }
+}
+
 /* Estilo inicial del botón */
 #sendButton {
     width: 100%;
