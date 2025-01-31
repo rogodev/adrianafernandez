@@ -369,6 +369,14 @@ b{
     .container .contact-info .txt {
         font-size: 16px;
     }
+
+    .footer-container p,.footer-container b{
+        letter-spacing: 0.5px;
+        font-size: 9px;
+    }
+    .footer-container b{
+        font-size: 10px;
+    }
     
 }
 
