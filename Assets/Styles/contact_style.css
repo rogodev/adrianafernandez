@@ -1,5 +1,5 @@
 :root{
-    --color-primary : #f8a9ff;
+    --color-primary : #000000;
 }
 
 
@@ -157,7 +157,7 @@ b{
 }
 
 .container .contact-info .sci li a i{
-    color: #f8a9ff9e;
+    color: #00000068;
     font-size: 2.5em;
     transition: 0.25s;
 }
@@ -196,11 +196,16 @@ b{
 }
 
 .footer-container{
-    background-color: black;
-    height: 15vh;
+    height: 5vh;
     width: 100vw;
     position: absolute;
-    top: 85vh;
+    top: 95vh;
+    text-align: center;
+    font-size: 10px;
+}
+
+.footer-container b{
+    font-size: 15px;
 }
 
 @property --a{
@@ -300,7 +305,7 @@ b{
     }
 
     .Contact .content{
-        width: 90vw;
+        width: 80vw;
     }
 
     .container .contact-info {
@@ -322,9 +327,13 @@ b{
         left: 0;
     }
 
-   .footer-container{
-    top: 150%;
-   }
+    .footer-container {
+        position: static;  /* Elimina la posición absoluta */
+        top: auto;  /* Restablece el valor de top */
+        margin-top: 50px;  /* Agrega un margen para separarlo */
+        height: 10vh;  /* Asegura que tome la altura del contenido */
+        padding: 40px 0;  /* Agrega algo de relleno si es necesario */
+    }
 } 
 
 @media (max-width: 380px) {
