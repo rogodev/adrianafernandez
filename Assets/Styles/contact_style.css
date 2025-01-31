@@ -348,7 +348,7 @@ b{
 
     .footer-container {
         position: static;  /* Elimina la posición absoluta */
-        height: 10vh;  /* Asegura que tome la altura del contenido */
+        height: 10dvh;  /* Asegura que tome la altura del contenido */
         padding: 10px;
     }
 
