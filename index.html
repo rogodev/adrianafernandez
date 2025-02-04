@@ -1,77 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta básico y compatible -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descripción para SEO -->
+    <meta name="description" content="Portfolio de Adriana Fernández Morentin: descubre su trabajo artístico en fotografía y video.">
+    
+    <!-- Palabras clave para SEO -->
+    <meta name="keywords" content="Adriana Fernández Morentin,Adriana Fernández San Adrian, Adriana Fernández, portfolio, fotografía, San Adrian, video, arte, bulls, places, concerts, animals, life, motion">
+    
+    <!-- Autora del sitio -->
+    <meta name="author" content="Adriana Fernández Morentin">
+    
+    <!-- Recursos CSS -->
     <link rel="stylesheet" href="Assets/Styles/style.css">
-    <link rel="icon" href="Assets/Images/af-logo.ico">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/Images/af-logo.ico" type="image/x-icon">
+    
+    <!-- Título optimizado -->
     <title>Adriana Fernández Morentin</title>
 </head>
 <body>
-
+    <!-- Sección de introducción con video -->
     <div class="intro">
         <video id="video" autoplay muted playsinline class="gif-video">
             <source src="Assets/Videos/Intro.mp4" type="video/mp4">
-          </video>
+            <!-- Texto alternativo para accesibilidad -->
+            Your browser does not support the video tag.
+        </video>
     </div>
 
-
+    <!-- Encabezado principal -->
     <header class="header">
+        <!-- Nombre del portfolio -->
         <h4>Adriana Fernández Morentin</h4>
+        
+        <!-- Menú de navegación principal -->
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li><a class="nav-link" href="Assets/Pages/bulls.html">Bulls</a></li>    
-                <li><a class="nav-link" href="Assets/Pages/places.html">Places</a></li>    
-                <li><a class="nav-link" href="Assets/Pages/concerts.html">Concerts</a></li>   
-                <li><a class="nav-link" href="Assets/Pages/animals.html">Animals</a></li>   
-                <li><a class="nav-link" href="Assets/Pages/life.html">Life</a></li>    
-                <li><a class="nav-link" href="Assets/Pages/motion.html">Motion</a></li>    
-                <li><a class="nav-link" href="Assets/Pages/about.html">About</a></li>   
-                <li><a class="nav-link" href="Assets/Pages/contact.html">Contact</a></li>   
-            </ul>
-        </nav>
-        <div class="header-trigger">
-            <button class="menu-open-button">
-                <img src="Assets/Images/Icons/abajo.png" alt="">
-            </button>
-        </div>
-        <nav class="header-nav-social-media">
-            <ul class="header-nav-social-media-list">
-                <li class="header-nav-social-media-list-item"><a target="_blank" href="https://www.instagram.com/aadrii_fdz/"><img src="Assets/Images/Icons/instagram.png" alt=""></a></li>
-                <li class="header-nav-social-media-list-item"><a target="_blank" href="https://www.tiktok.com/@aadrii_fdz"><img src="Assets/Images/Icons/tiktok.png" alt=""></a></li>
+                <li><a class="nav-link" href="Assets/Pages/bulls.html">Bulls</a></li>
+                <li><a class="nav-link" href="Assets/Pages/places.html">Places</a></li>
+                <li><a class="nav-link" href="Assets/Pages/concerts.html">Concerts</a></li>
+                <li><a class="nav-link" href="Assets/Pages/animals.html">Animals</a></li>
+                <li><a class="nav-link" href="Assets/Pages/life.html">Life</a></li>
+                <li><a class="nav-link" href="Assets/Pages/motion.html">Motion</a></li>
+                <li><a class="nav-link" href="Assets/Pages/about.html">About</a></li>
+                <li><a class="nav-link" href="Assets/Pages/contact.html">Contact</a></li>
             </ul>
         </nav>
 
+        <!-- Botón de menú desplegable -->
+        <div class="header-trigger">
+            <button class="menu-open-button" aria-label="Abrir menú">
+                <img src="Assets/Images/Icons/abajo.png" alt="Icono de menú">
+            </button>
+        </div>
+
+        <!-- Redes sociales -->
+        <nav class="header-nav-social-media">
+            <ul class="header-nav-social-media-list">
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/aadrii_fdz/" aria-label="Instagram">
+                        <img src="Assets/Images/Icons/instagram.png" alt="Icono de Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.tiktok.com/@aadrii_fdz" aria-label="TikTok">
+                        <img src="Assets/Images/Icons/tiktok.png" alt="Icono de TikTok">
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
         <!-- Menú desplegable -->
         <div class="menu-overlay">
             <header class="menu-overlay-header">
                 <h4>Adriana Fernández Morentin</h4>
-                <button class="close-btn"><img src="Assets/Images/Icons/arriba.png" alt=""></button>
+                <button class="close-btn" aria-label="Cerrar menú">
+                    <img src="Assets/Images/Icons/arriba.png" alt="Icono para cerrar">
+                </button>
                 <nav class="menu-overlay-header-nav-social-media">
                     <ul class="menu-overlay-header-nav-social-media-list">
-                        <li class="menu-overlay-header-nav-social-media-list-item"><a target="_blank" href="https://www.instagram.com/aadrii_fdz/"><img src="Assets/Images/Icons/instagram-black.png" alt=""></a></li>
-                        <li class="menu-overlay-header-nav-social-media-list-item"><a target="_blank" href="https://www.tiktok.com/@aadrii_fdz/"><img src="Assets/Images/Icons/tik-tok-black.png" alt=""></a></li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/aadrii_fdz/" aria-label="Instagram">
+                                <img src="Assets/Images/Icons/instagram-black.png" alt="Icono de Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.tiktok.com/@aadrii_fdz" aria-label="TikTok">
+                                <img src="Assets/Images/Icons/tik-tok-black.png" alt="Icono de TikTok">
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </header>
+
             <nav>
                 <ul class="menu-overlay-list">
-                    <li><a class="nav-link" href="Assets/Pages/bulls.html">Bulls</a></li>    
-                    <li><a class="nav-link" href="Assets/Pages/places.html">Places</a></li>    
-                    <li><a class="nav-link" href="Assets/Pages/concerts.html">Concerts</a></li>   
-                    <li><a class="nav-link" href="Assets/Pages/animals.html">Animals</a></li>   
-                    <li><a class="nav-link" href="Assets/Pages/life.html">Life</a></li>    
-                    <li><a class="nav-link" href="Assets/Pages/motion.html">Motion</a></li>    
-                    <li><a class="nav-link" href="Assets/Pages/about.html">About</a></li>   
-                    <li><a class="nav-link" href="Assets/Pages/contact.html">Contact</a></li>   
+                    <!-- Enlaces duplicados (puedes considerar reutilizar una clase para evitar repetición) -->
+                    <li><a class="nav-link" href="Assets/Pages/bulls.html">Bulls</a></li>
+                    <li><a class="nav-link" href="Assets/Pages/places.html">Places</a></li>
+                    <li><a class="nav-link" href="Assets/Pages/concerts.html">Concerts</a></li>
+                    <li><a class="nav-link" href="Assets/Pages/animals.html">Animals</a></li>
+                    <li><a class="nav-link" href="Assets/Pages/life.html">Life</a></li>
+                    <li><a class="nav-link" href="Assets/Pages/motion.html">Motion</a></li>
+                    <li><a class="nav-link" href="Assets/Pages/about.html">About</a></li>
+                    <li><a class="nav-link" href="Assets/Pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
 
-    <div class="slider pc">
+    <section class="slider pc">
         <div class="slides">
             <div class="slide" style="background-image: url('Assets/Images/Animals/animals5.jpeg'); background-position: 0% 30%;"></div>
             <div class="slide" style="background-image: url('Assets/Images/Bulls/toros15.jpeg');"></div>
@@ -82,31 +126,41 @@
             <div class="slide" style="background-image: url('Assets/Images/Places/places2.jpeg'); background-position: 0% 50%;"></div>
             <div class="slide" style="background-image: url('Assets/Images/Animals/animals5.jpeg'); background-position: 0% 30%;"></div>
         </div>
-    </div>
+    </section>
 
-    <div class="slider mobile"">
+    <section class="slider mobile"">
         <div class="slides2">
             <div class="slide2" style="background-image: url('Assets/Images/Animals/animals1.jpeg'); 
-            background-position: 70% 30%;"></div>
-            <div class="slide2" style="background-image: url('Assets/Images/Places/places7.jpeg');"></div>
-            <div class="slide2" style="background-image: url('Assets/Images/Bulls/toros18.jpeg');"></div>
+                background-position: 70% 30%;" aria-label="Animales"></div>
+            <div class="slide2" style="background-image: url('Assets/Images/Places/places7.jpeg');" 
+                aria-label="Places"></div>
+            <div class="slide2" style="background-image: url('Assets/Images/Bulls/toros18.jpeg');" 
+                aria-label="Bulls"></div>
             <div class="slide2" style="background-image: url('Assets/Images/Life/people4.jpeg');
-            background-position: 70% center;"></div>
-            <div class="slide2" style="background-image: url('Assets/Images/Concerts/inna7.jpeg');"></div>
-            <div class="slide2" style="background-image: url('Assets/Images/Animals/animals2.jpeg');"></div>
+                background-position: 70% center;" aria-label="Life"></div>
+            <div class="slide2" style="background-image: url('Assets/Images/Concerts/inna7.jpeg');"
+                aria-label="Concerts"></div>
+            <div class="slide2" style="background-image: url('Assets/Images/Animals/animals2.jpeg');"
+                aria-label="Animals"></div>
             <div class="slide2" style="background-image: url('Assets/Images/Bulls/toros16.jpeg');
-            background-position: 60% 50%;"></div>
+            background-position: 60% 50%;"
+                aria-label="Bulls"></div>
             <div class="slide2" style="background-image: url('Assets/Images/Places/torredembarra1.jpeg'); 
-            background-position: 0% 80%"></div>
+                background-position: 0% 80%" aria-label="Places"></div>
             <div class="slide2" style="background-image: url('Assets/Images/Animals/animals4.jpeg'); 
-            background-position: 50% 30%;"></div>
-            <div class="slide2" style="background-image: url('Assets/Images/Concerts/inna4.jpeg');"></div>
-            <div class="slide2" style="background-image: url('Assets/Images/Life/people1.jpeg');"></div>
-            <div class="slide2" style="background-image: url('Assets/Images/Bulls/toros17.jpeg'); background-position: 50% 80%;"></div>
-            <div class="slide2" style="background-image: url('Assets/Images/Places/places5.jpeg');"></div>
-            <div class="slide2" style="background-image: url('Assets/Images/Bulls/toros5.jpeg');"></div>
+                background-position: 50% 30%;" aria-label="Animals"></div>
+            <div class="slide2" style="background-image: url('Assets/Images/Concerts/inna4.jpeg');"
+                aria-label="Concerts"></div>
+            <div class="slide2" style="background-image: url('Assets/Images/Life/people1.jpeg');"
+                aria-label="Life"></div>
+            <div class="slide2" style="background-image: url('Assets/Images/Bulls/toros17.jpeg');
+                 background-position: 50% 80%;"  aria-label="Bulls"></div>
+            <div class="slide2" style="background-image: url('Assets/Images/Places/places5.jpeg');"
+                aria-label="Places"></div>
+            <div class="slide2" style="background-image: url('Assets/Images/Bulls/toros5.jpeg');"
+                aria-label="Bulls"></div>
             <div class="slide2" style="background-image: url('Assets/Images/Animals/animals1.jpeg'); 
-            background-position: 70% 30%;"></div>
+                background-position: 70% 30%;"  aria-label="Animals"></div>
         </div>
     </div>
 
