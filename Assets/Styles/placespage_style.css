@@ -40,6 +40,19 @@
     grid-column-start: span 2;
 }
 
+.container-img .box-img:nth-child(19) {
+    grid-row-start: span 2;
+}
+
+.container-img .box-img:nth-child(22) {
+    grid-column-start: span 2;
+}
+
+.container-img .box-img:nth-child(23) {
+    grid-column-start: span 2;
+}
+
+
 /* Estilo para pantallas pequeñas */
 @media screen and (max-width: 500px) {
 
@@ -88,4 +101,8 @@
         grid-row-start: span 2;
     }
 
+
+    .container-img .box-img:nth-child(23) {
+        grid-column-start: span 1;
+    }
 }
