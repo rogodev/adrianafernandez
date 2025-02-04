@@ -27,6 +27,10 @@
     grid-row-start: span 1;
 }
 
+.container-img .box-img:nth-child(13) {
+    grid-column-start: span 2;
+}
+
 @media screen and (max-width: 500px) {
     .menu-overlay-header {
         padding: 10px 30px;
@@ -67,11 +71,12 @@
     .container-img .box-img:nth-child(6) {
         grid-row-start: span 1;
         grid-column-start: span 1;
-        height: 300px;
+        height: 200px;
     }
 
     .container-img .box-img:nth-child(7) {
         grid-column-start: span 1;
+        height: 200px;
     }
 
     .container-img .box-img:nth-child(8) {
