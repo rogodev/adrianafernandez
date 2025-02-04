@@ -1,75 +1,75 @@
+/* Estilos para imágenes en la cuadrícula */
+.container-img .box-img:nth-child(3),
+.container-img .box-img:nth-child(7) {
+    height: 400px;
+}
 
-
-
-.container-img .box-img:nth-child(10){
-
+.container-img .box-img:nth-child(6),
+.container-img .box-img:nth-child(10) {
     grid-row-start: span 2;
 }
 
-.container-img .box-img:nth-child(11){
-
+.container-img .box-img:nth-child(11) {
     grid-column-start: span 2;
     height: 600px;
 }
 
-.container-img .box-img:nth-child(15){
+.container-img .box-img:nth-child(12),
+.container-img .box-img:nth-child(13) {
+    height: 200px;
+}
 
+.container-img .box-img:nth-child(14) {
     grid-column-start: span 2;
 }
 
-
-
-
-@media screen and (max-width : 900px){
-
-    .menu-overlay-header{
+/* Responsive para pantallas menores a 900px */
+@media screen and (max-width: 900px) {
+    .menu-overlay-header {
         padding: 10px 30px;
     }
-    .container-img{
+
+    .container-img {
         width: 90%;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
 
-    .container-img .box-img img{
+    .container-img .box-img img {
         grid-row-start: span 2;
     }
 
-    .container-img .box-img:nth-child(4){
+    .container-img .box-img:nth-child(3),
+    .container-img .box-img:nth-child(7) {
+        height: auto;
+    }
 
+    .container-img .box-img:nth-child(4),
+    .container-img .box-img:nth-child(10) {
         grid-column-start: span 2;
     }
 
-    
-    .container-img .box-img:nth-child(10){
-
-        grid-column-start: span 2;
+    .container-img .box-img:nth-child(6) {
+        grid-row-start: span 1;
     }
 
-    .container-img .box-img:nth-child(11){
-
+    .container-img .box-img:nth-child(11) {
         height: 200px;
         grid-column-start: span 1;
     }
-    .container-img .box-img:nth-child(12){
 
+    .container-img .box-img:nth-child(12) {
         height: 200px;
         grid-column-start: span 1;
-
     }
 
-
-    .container-img .box-img:nth-child(13){
-
+    .container-img .box-img:nth-child(13) {
         grid-column-start: span 2;
         grid-row-start: span 2;
     }
-    .container-img .box-img:nth-child(14){
 
-        grid-column-start: span 1;
-    }
-    .container-img .box-img:nth-child(15){
-
+    .container-img .box-img:nth-child(14),
+    .container-img .box-img:nth-child(15) {
         grid-column-start: span 1;
     }
 }

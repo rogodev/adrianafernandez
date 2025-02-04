@@ -96,7 +96,7 @@ b{
 .container .contact-info .box .icon b{
     position: absolute;
     inset: 8px;
-    background:var(--color-primary) ;
+    background:black;
     z-index: 2;
 }
 
@@ -107,7 +107,7 @@ b{
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 10;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .container .contact-info .box .text{
