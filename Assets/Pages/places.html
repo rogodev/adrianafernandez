@@ -3,225 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título descriptivo para mejorar el SEO -->
     <title>Places</title>
+
+    <!-- Meta descripción para SEO -->
+    <meta name="description" content="Explore the places page of Adriana Fernández Morentin, showcasing beautiful locations, photos, and more.">
+
+    <!-- Links a los estilos CSS -->
     <link rel="stylesheet" href="../Styles/fotopages_style.css">
     <link rel="stylesheet" href="../Styles/placespage_style.css">
+
+    <!-- Mejorando accesibilidad añadiendo un favicon -->
+    <link rel="icon" href="../Images/Icons/af-logo.ico" type="image/x-icon">
 </head>
 <body>
 
+    <!-- Encabezado de la página con estructura clara -->
     <header class="header">
-        <h4><a style="color: black;" class="nav-link" href="../../index.html">Adriana Fernández Morentin</a></h4>
+        <!-- Nombre de la autora como enlace a la página principal con estilo claro -->
+        <h4><a href="../../index.html" class="nav-link" style="color: black;" title="Go to Home Page">Adriana Fernández Morentin</a></h4>
+        
+        <!-- Menú de navegación principal con fondo blanco -->
         <nav class="header-nav" style="background-color: rgb(255, 255, 255);">
             <ul class="header-nav-list">
-                <li><a class="nav-link" href="bulls.html">Bulls</a></li>    
-                <li><a class="nav-link" href="places.html">Places</a></li>    
-                <li><a class="nav-link" href="concerts.html">Concerts</a></li>   
-                <li><a class="nav-link" href="animals.html">Animals</a></li>   
-                <li><a class="nav-link" href="life.html">Life</a></li>      
-                <li><a class="nav-link" href="motion.html">Motion</a></li>     
-                <li><a class="nav-link" href="about.html">About</a></li>   
-                <li><a class="nav-link" href="contact.html">Contact</a></li>   
+                <!-- Asegurando que los enlaces sean claros y descriptivos para SEO -->
+                <li><a class="nav-link" href="bulls.html" title="Explore the Bulls Page">Bulls</a></li>    
+                <li><a class="nav-link" href="places.html" title="Explore the Places Page">Places</a></li>    
+                <li><a class="nav-link" href="concerts.html" title="Explore the Concerts Page">Concerts</a></li>   
+                <li><a class="nav-link" href="animals.html" title="Explore the Animals Page">Animals</a></li>   
+                <li><a class="nav-link" href="life.html" title="Explore the Life Page">Life</a></li>      
+                <li><a class="nav-link" href="motion.html" title="Explore the Motion Page">Motion</a></li>     
+                <li><a class="nav-link" href="about.html" title="Learn more About Adriana">About</a></li>   
+                <li><a class="nav-link" href="contact.html" title="Contact Adriana">Contact</a></li>   
             </ul>
         </nav>
+
+        <!-- Icono para menú móvil -->
         <div class="header-trigger">
-            <button class="menu-open-button">
-                <img src="../Images/Icons/abajo_black.png" alt="">
+            <button class="menu-open-button" aria-label="Open mobile menu">
+                <img src="../Images/Icons/abajo_black.png" alt="Open Menu">
             </button>
         </div>
+
+        <!-- Navegación de redes sociales -->
         <nav class="header-nav-social-media">
             <ul class="header-nav-social-media-list">
-                <li class="header-nav-social-media-list-item"><a target="_blank" href="https://www.instagram.com/aadrii_fdz/"><img src="../Images/Icons/instagram-black.png" alt=""></a></li>
-                <li class="header-nav-social-media-list-item"><a target="_blank" href="https://www.tiktok.com/@aadrii_fdz"><img src="../Images/Icons/tik-tok-black.png" alt=""></a></li>
+                <!-- Enlaces a redes sociales con descripciones y apertura en nueva pestaña -->
+                <li class="header-nav-social-media-list-item"><a target="_blank" href="https://www.instagram.com/aadrii_fdz/" title="Instagram Profile"><img src="../Images/Icons/instagram-black.png" alt="Instagram"></a></li>
+                <li class="header-nav-social-media-list-item"><a target="_blank" href="https://www.tiktok.com/@aadrii_fdz" title="TikTok Profile"><img src="../Images/Icons/tik-tok-black.png" alt="TikTok"></a></li>
             </ul>
         </nav>
 
-
-        <!-- Menú desplegable -->
+        <!-- Menú desplegable para dispositivos móviles -->
         <div class="menu-overlay">
             <header class="menu-overlay-header">
-                <h4><a style="color: black;" class="nav-link" href="../../index.html">Adriana Fernández Morentin</a></h4>
-                <button class="close-btn"><img src="../Images/Icons/arriba.png" alt=""></button>
+                <h4><a href="../../index.html" class="nav-link" style="color: black;" title="Go to Home Page">Adriana Fernández Morentin</a></h4>
+                <button class="close-btn" aria-label="Close mobile menu"><img src="../Images/Icons/arriba.png" alt="Close Menu"></button>
+                <!-- Repetir enlaces a redes sociales para menú móvil -->
                 <nav class="menu-overlay-header-nav-social-media">
                     <ul class="menu-overlay-header-nav-social-media-list">
-                        <li class="menu-overlay-header-nav-social-media-list-item"><a target="_blank" href="https://www.instagram.com/aadrii_fdz/"><img src="../Images/Icons/instagram-black.png" alt=""></a></li>
-                        <li class="menu-overlay-header-nav-social-media-list-item"><a target="_blank" href="https://www.tiktok.com/@aadrii_fdz/"><img src="../Images/Icons/tik-tok-black.png" alt=""></a></li>
+                        <li class="menu-overlay-header-nav-social-media-list-item"><a target="_blank" href="https://www.instagram.com/aadrii_fdz/" title="Instagram Profile"><img src="../Images/Icons/instagram-black.png" alt="Instagram"></a></li>
+                        <li class="menu-overlay-header-nav-social-media-list-item"><a target="_blank" href="https://www.tiktok.com/@aadrii_fdz/" title="TikTok Profile"><img src="../Images/Icons/tik-tok-black.png" alt="TikTok"></a></li>
                     </ul>
                 </nav>
             </header>
+            
+            <!-- Lista de navegación para el menú móvil -->
             <nav>
                 <ul class="menu-overlay-list">
-                    <li><a class="nav-link" href="bulls.html">Bulls</a></li>    
-                    <li><a class="nav-link" href="places.html">Places</a></li>    
-                    <li><a class="nav-link" href="concerts.html">Concerts</a></li>   
-                    <li><a class="nav-link" href="animals.html">Animals</a></li>   
-                    <li><a class="nav-link" href="life.html">Life</a></li>   
-                    <li><a class="nav-link" href="motion.html">Motion</a></li>    
-                    <li><a class="nav-link" href="about.html">About</a></li>   
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>   
+                    <li><a class="nav-link" href="bulls.html" title="Explore the Bulls Page">Bulls</a></li>    
+                    <li><a class="nav-link" href="places.html" title="Explore the Places Page">Places</a></li>    
+                    <li><a class="nav-link" href="concerts.html" title="Explore the Concerts Page">Concerts</a></li>   
+                    <li><a class="nav-link" href="animals.html" title="Explore the Animals Page">Animals</a></li>   
+                    <li><a class="nav-link" href="life.html" title="Explore the Life Page">Life</a></li>   
+                    <li><a class="nav-link" href="motion.html" title="Explore the Motion Page">Motion</a></li>    
+                    <li><a class="nav-link" href="about.html" title="Learn more About Adriana">About</a></li>   
+                    <li><a class="nav-link" href="contact.html" title="Contact Adriana">Contact</a></li>   
                 </ul>
             </nav>
         </div>
     </header>
 
 
-    <div class="container-img">
+    <section class="container-img">
         <div class="box-img">
-            <a href="">
+            <a href="#">
                 <figure>
                     <picture>
-                        <!-- Imagen para móvil -->
-                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/torredembarra1.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/torredembarra1.jpeg" alt="torredembarra-1" loading="lazy" style="object-position: 0% 80%;">
-                    </picture>
-                </figure>
-            </a>
-        </div>
-        <div class="box-img">
-            <a href="">
-                <figure>
-                    <picture>
-                        <!-- Imagen para móvil -->
-                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/torredembarra2.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/torredembarra2.jpeg" alt="torredembarra-2" loading="lazy">
-                    </picture>
-                </figure>
-            </a>
-        </div>
-        <div class="box-img">
-            <a href="">
-                <figure>
-                    <picture>
-                        <!-- Imagen para móvil -->
-                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/torredembarra3.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/torredembarra3.jpeg" alt="torredembarra-3" loading="lazy">
-                    </picture>
-                </figure>
-            </a>
-        </div>
-        <div class="box-img">
-            <a href="">
-                <figure>
-                    <picture>
-                        <!-- Imagen para móvil -->
                         <source media="(max-width: 900px)" srcset="../Images/Places/Movil/torredembarra7.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/torredembarra7.jpeg" alt="torredembarra-4" loading="lazy">
+                        <img src="../Images/Places/bardenas1.jpeg" alt="Vista panorámica de las Bardenas Reales" loading="lazy">
                     </picture>
                 </figure>
             </a>
         </div>
         <div class="box-img">
-            <a href="">
+            <a href="#">
                 <figure>
                     <picture>
-                        <!-- Imagen para móvil -->
-                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/torredembarra5.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/torredembarra5.jpeg" alt="torredembarra-5" loading="lazy">
-                    </picture>
-                </figure>
-            </a>
-        </div>
-        <div class="box-img">
-            <a href="">
-                <figure>
-                    <picture>
-                        <!-- Imagen para móvil -->
-                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/torredembarra4.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/torredembarra4.jpeg" alt="torredembarra-6" loading="lazy">
-                    </picture>
-                </figure>
-            </a>
-        </div>
-        <div class="box-img">
-            <a href="">
-                <figure>
-                    <picture>
-                        <!-- Imagen para móvil -->
-                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places1.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/places1.jpeg" alt="torredembarra-6" loading="lazy">
-                    </picture>
-                </figure>
-            </a>
-        </div>
-        <div class="box-img">
-            <a href="">
-                <figure>
-                    <picture>
-                        <!-- Imagen para móvil -->
-                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places3.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/places3.jpeg" alt="torredembarra-6" loading="lazy">
-                    </picture>
-                </figure>
-            </a>
-        </div>
-        <div class="box-img">
-            <a href="">
-                <figure>
-                    <picture>
-                        <!-- Imagen para móvil -->
-                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places2.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/places2.jpeg" alt="torredembarra-6" loading="lazy">
-                    </picture>
-                </figure>
-            </a>
-        </div>
-        <div class="box-img">
-            <a href="">
-                <figure>
-                    <picture>
-                        <!-- Imagen para móvil -->
-                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places5.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/places5.jpeg" alt="torredembarra-6" loading="lazy">
-                    </picture>
-                </figure>
-            </a>
-        </div>
-        <div class="box-img">
-            <a href="">
-                <figure>
-                    <picture>
-                        <!-- Imagen para móvil -->
-                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places6.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/places6.jpeg" alt="torredembarra-6" loading="lazy">
-                    </picture>
-                </figure>
-            </a>
-        </div>
-        <div class="box-img">
-            <a href="">
-                <figure>
-                    <picture>
-                        <!-- Imagen para móvil -->
                         <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places7.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/places7.jpeg" alt="torredembarra-6" loading="lazy">
+                        <img src="../Images/Places/places7.jpeg" alt="Lugares emblemáticos en el área de Torredembarra" loading="lazy">
                     </picture>
                 </figure>
             </a>
         </div>
         <div class="box-img">
-            <a href="">
+            <a href="#">
                 <figure>
                     <picture>
-                        <!-- Imagen para móvil -->
-                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places4.jpeg">
-                        <!-- Imagen por defecto -->
-                        <img src="../Images/Places/places4.jpeg" alt="torredembarra-6" loading="lazy">
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/bardenas2.jpeg">
+                        <img src="../Images/Places/torredembarra1.jpeg" alt="Panorama de Torredembarra desde el mar" loading="lazy">
                     </picture>
                 </figure>
             </a>
         </div>
-    </div>
+        <div class="box-img">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/bardenas5.jpeg">
+                        <img src="../Images/Places/torredembarra7.jpeg" alt="Atardecer en Torredembarra con vistas al mar" loading="lazy">
+                    </picture>
+                </figure>
+            </a>
+        </div>
+        <div class="box-img">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/bardenas3.jpeg">
+                        <img src="../Images/Places/bardenas3.jpeg" alt="Paisaje de las Bardenas Reales al amanecer"
+                        style="object-position: 50% 0%;" loading="lazy">
+                    </picture>
+                </figure>
+            </a>
+        </div>
+        <div class="box-img">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/torredembarra4.jpeg">
+                        <img src="../Images/Places/torredembarra4.jpeg" alt="Camino costero en Torredembarra con vegetación mediterránea" loading="lazy">
+                    </picture>
+                </figure>
+            </a>
+        </div>
+        <div class="box-img">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places1.jpeg">
+                        <img src="../Images/Places/places1.jpeg" alt="Vista de un parque en Torredembarra" loading="lazy">
+                    </picture>
+                </figure>
+            </a>
+        </div>
+        <div class="box-img">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/torredembarra3.jpeg">
+                        <img src="../Images/Places/bardenas2.jpeg" alt="Sendero natural en las Bardenas Reales" loading="lazy">
+                    </picture>
+                </figure>
+            </a>
+        </div>
+        <div class="box-img">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places5.jpeg">
+                        <img src="../Images/Places/places5.jpeg" alt="Playa tranquila en Torredembarra" loading="lazy">
+                    </picture>
+                </figure>
+            </a>
+        </div>
+        <div class="box-img">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places2.jpeg">
+                        <img src="../Images/Places/places2.jpeg" alt="Calle peatonal en el centro de Torredembarra" loading="lazy">
+                    </picture>
+                </figure>
+            </a>
+        </div>
+        <div class="box-img">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/torredembarra2.jpeg">
+                        <img src="../Images/Places/torredembarra2.jpeg" alt="Vista de la costa de Torredembarra durante el atardecer" loading="lazy">
+                    </picture>
+                </figure>
+            </a>
+        </div>
+        <div class="box-img">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places6.jpeg">
+                        <img src="../Images/Places/places6.jpeg" alt="Instante capturado en la costa de Torredembarra" loading="lazy">
+                    </picture>
+                </figure>
+            </a>
+        </div>
+        <div class="box-img">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/places4.jpeg">
+                        <img src="../Images/Places/places4.jpeg" alt="Vista panorámica de un paisaje natural de Torredembarra" loading="lazy">
+                    </picture>
+                </figure>
+            </a>
+        </div>
+        <div class="box-img">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="../Images/Places/Movil/bardenas4.jpeg">
+                        <img src="../Images/Places/bardenas4.jpeg" alt="Vista aérea de las Bardenas Reales" loading="lazy">
+                    </picture>
+                </figure>
+            </a>
+        </div>
+    </section>
+    
     
     <div class="image-modal">
         <!-- Flecha izquierda -->
