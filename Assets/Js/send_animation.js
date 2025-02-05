@@ -1,35 +1,52 @@
 document.addEventListener('DOMContentLoaded', function () {
   const contactForm = document.getElementById('contactForm');
   const sendButton = document.getElementById('sendButton');
-  const emailInput = document.getElementById('email');  // El campo de correo electrónico
+  const emailInput = document.getElementById('email'); // Campo de correo electrónico
 
-  contactForm.addEventListener('submit', function (e) {
-    e.preventDefault(); // Evita que se recargue la página
+  contactForm.addEventListener('submit', async function (e) {
+    e.preventDefault(); // Evita el comportamiento predeterminado del formulario
 
-    // Validamos si el correo electrónico tiene un formato válido
+    // Validación del correo
     const emailValue = emailInput.value;
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Expresión regular para el formato de correo
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (!emailRegex.test(emailValue)) {
-      // Si el correo no es válido, mostramos un mensaje de error y detenemos el envío
       alert('Por favor ingresa un correo electrónico válido.');
-      return; // Detiene el envío del formulario
+      return;
     }
 
-    // Comienza la animación: el botón se convierte en círculo
+    // Animación: botón a estado de envío
     sendButton.classList.add('sending');
+    sendButton.innerText = 'Sending...';
 
-    // Simula el envío del formulario y muestra el ícono de check
-    setTimeout(() => {
-      sendButton.classList.remove('sending'); // Ya no es un círculo animado
-      sendButton.classList.add('success');    // Se mantiene como un círculo con el check
-      sendButton.innerHTML = '<i class="fa-solid fa-check"></i>'; // Agrega el ícono de check
+    // Crear los datos en formato que entiende FormSubmit
+    const formData = new FormData(contactForm);
 
-      // Deshabilita el botón para que no se pueda interactuar más
-      sendButton.disabled = true;
+    try {
+      // Enviar los datos a FormSubmit
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+      });
 
-      // Limpia los campos del formulario
-      contactForm.reset(); // Resetea todos los campos del formulario
-    }, 1000); // Espera 500ms para la animación
+      if (response.ok) {
+        // Si la solicitud es exitosa
+        setTimeout(() => {
+          sendButton.classList.remove('sending');
+          sendButton.classList.add('success');
+          sendButton.innerHTML = '<i class="fa-solid fa-check"></i>'; // Ícono de éxito
+          sendButton.disabled = true; // Deshabilita el botón
+          contactForm.reset(); // Resetea el formulario
+        }, 1000);
+      } else {
+        // Si la solicitud falla
+        throw new Error('Hubo un problema al enviar el mensaje.');
+      }
+    } catch (error) {
+      // Mostrar mensaje de error
+      alert(error.message || 'No se pudo enviar el formulario. Inténtalo más tarde.');
+      sendButton.classList.remove('sending');
+      sendButton.innerText = 'Send'; // Restablece el texto original del botón
+    }
   });
 });
