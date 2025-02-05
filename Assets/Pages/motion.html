@@ -67,67 +67,48 @@
 
     <section class="container-img">
         <div class="box-img">
-            <a href="#" aria-label="Video Entre Ríos" class="video-trigger" data-video-src="../Videos/EntreRiosVideo.mp4">
-                <img src="../Videos/thumbnails/EntreRiosVideo.jpeg" alt="Previsualización del video Entre Ríos" class="video-thumbnail">
+            <a href="">
+                <video style="object-position: 0% 70%;" id="video" autoplay muted loop playsinline class="gif-video">
+                    <source src="../Videos/ToroConSoga_1.mp4" type="video/mp4">
+                </video>
             </a>
         </div>
         <div class="box-img">
-            <a href="#" aria-label="Video Torredembarra" class="video-trigger" data-video-src="../Videos/TorredembarraMotion.mp4">
-                <img src="../Videos/thumbnails/TorredembarraMotion.jpg" alt="Previsualización del video Torredembarra" class="video-thumbnail">
+            <a href="">
+                <video style="object-position: 0% 50%;" id="video" autoplay muted loop playsinline class="gif-video">
+                    <source src="../Videos/ToroConSoga_2.mp4" type="video/mp4">
+                </video>
             </a>
         </div>
         <div class="box-img">
-            <a href="#" aria-label="Video Mercado Pirata" class="video-trigger" data-video-src="../Videos/mercado_pirata.mp4">
-                <img src="../Videos/mercado_pirata.jpg" alt="Previsualización del video Mercado Pirata" class="video-thumbnail">
+            <a href="">
+                <video id="video" autoplay muted loop playsinline class="gif-video">
+                    <source src="../Videos/EntreRiosVideo.mp4" type="video/mp4">
+                </video>
             </a>
         </div>
         <div class="box-img">
-            <a href="#" aria-label="Video Fuegos Torredembarra" class="video-trigger" data-video-src="../Videos/fuegos_torredembarra.mp4">
-                <img src="../Videos/fuegos_torredembarra.jpg" alt="Previsualización del video Fuegos Torredembarra" class="video-thumbnail">
+            <a href="">
+                <video id="video" autoplay muted loop playsinline class="gif-video">
+                    <source src="../Videos/TorredembarraMotion.mp4" type="video/mp4">
+                </video>
             </a>
         </div>
         <div class="box-img">
-            <a href="#" aria-label="Video Toro con Soga 1" class="video-trigger" data-video-src="../Videos/ToroConSoga_1.mp4">
-                <img src="../Videos/thumbnails/ToroConSoga_1.jpg" alt="Previsualización del video Toro con Soga 1" class="video-thumbnail">
+            <a href="">
+                <video id="video" autoplay muted loop playsinline class="gif-video">
+                    <source src="../Videos/mercado_pirata.mp4" type="video/mp4">
+                </video>
             </a>
         </div>
         <div class="box-img">
-            <a href="#" aria-label="Video Toro con Soga 2" class="video-trigger" data-video-src="../Videos/ToroConSoga_2.mp4">
-                <img src="../Videos/thumbnails/ToroConSoga_2.jpg" alt="Previsualización del video Toro con Soga 2" class="video-thumbnail">
+            <a href="">
+                <video id="video" autoplay muted loop playsinline class="gif-video">
+                    <source src="../Videos/fuegos_torredembarra.mp4" type="video/mp4">
+                </video>
             </a>
         </div>
     </section>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const triggers = document.querySelectorAll('.video-trigger');
-            
-            triggers.forEach(trigger => {
-                trigger.addEventListener('click', (event) => {
-                    event.preventDefault();
-                    
-                    const videoSrc = trigger.getAttribute('data-video-src');
-                    const videoElement = document.createElement('video');
-                    
-                    videoElement.setAttribute('controls', true);
-                    videoElement.setAttribute('autoplay', true);
-                    videoElement.setAttribute('muted', true);
-                    videoElement.setAttribute('loop', true);
-                    videoElement.setAttribute('playsinline', true);
-                    videoElement.className = 'gif-video';
-                    
-                    const sourceElement = document.createElement('source');
-                    sourceElement.setAttribute('src', videoSrc);
-                    sourceElement.setAttribute('type', 'video/mp4');
-                    
-                    videoElement.appendChild(sourceElement);
-                    
-                    // Replace the thumbnail with the video
-                    trigger.replaceWith(videoElement);
-                });
-            });
-        });
-    </script>
     
     
 
