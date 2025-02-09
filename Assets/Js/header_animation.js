@@ -43,13 +43,11 @@ function ejecutarScript() {
             // Agregar eventos si la pantalla es grande
             header_trigger.addEventListener('mouseenter', mostrarMenu);
             header_nav.addEventListener('mouseleave', ocultarMenu);
-            console.log("Eventos agregados");
         } else {
             // Eliminar eventos si la pantalla es pequeña
             ocultarMenu();
             header_trigger.removeEventListener('mouseenter', mostrarMenu);
             header_nav.removeEventListener('mouseleave', ocultarMenu);
-            console.log("Eventos eliminados");
         }
     }
 
