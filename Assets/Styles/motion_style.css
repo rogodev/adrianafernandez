@@ -10,6 +10,43 @@
     object-fit: cover;
 }
 
+/* Estilo de fondo de carga */
+.video-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.video-container .loading-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Estilo para el video */
+.video-container video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1; /* El video debe estar por encima del fondo de carga */
+}
+
+/* Si un video ya está cargado, eliminamos el fondo de carga */
+.video-container.loaded .loading-background {
+    display: none;
+}
+
 @media screen and (max-width : 500px){
 
     .menu-overlay-header{
