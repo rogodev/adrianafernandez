@@ -15,6 +15,10 @@ video {
     background-color: rgb(202, 202, 202);
 }
 
+.container-img .box-img:nth-child(3) video{
+    background-image: url(../Videos/thumbnails/ToroConSoga2.png); 
+    background-size: cover;
+}
 
 @media screen and (max-width : 500px){
 
