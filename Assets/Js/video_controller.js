@@ -1,11 +1,11 @@
-// Seleccionamos todos los videos de la página
-const videos = document.querySelectorAll('video');
+
+const videos_ = document.querySelectorAll('video');
 
 // Variable para rastrear el video actualmente reproduciéndose
 let currentlyPlaying = null;
 
 // Agregamos un evento de clic a cada video
-videos.forEach((video) => {
+videos_.forEach((video) => {
     video.addEventListener('click', () => {
         // Si hay un video reproduciéndose y no es el que se pulsó, lo pausamos
         if (currentlyPlaying && currentlyPlaying !== video) {
