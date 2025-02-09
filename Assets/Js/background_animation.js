@@ -18,7 +18,6 @@ function slideImages() {
         slides.style.transition = 'transform 1s ease-in-out';
         slides.style.transform = `translateX(-${(100/totalSlides)*currentIndex1}%)`;
     }
-    console.log(totalSlides2);
     if (currentIndex2 === totalSlides2) {
 
 
